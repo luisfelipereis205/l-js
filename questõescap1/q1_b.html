@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+<script>
+        // Exercício feito por mim
+        // Elaborar um programa para uma pizzaria, o qual o valor total de uma conta e quantos clientes vão pagar essa conta. Calcule e informe o valor a ser pago por cliente.
+        const valor = Number(prompt("Digite o valor total da conta: R$ "))
+        const cliente = Number(prompt("Digite a quantidade de clientes: "))
+        const calculo = Number(valor / cliente)     
+        alert(`O valor dividido por cliente ficou R$ ${calculo.toFixed(2)} para cada`)  
+        
+        // Outra forma
+        // lê os dados de entrada
+        const conta = Number(prompt("Valor da Conta R$: "))
+         num = Number(prompt("Número de Clientes: "))
+        // calcula o valor individual por cliente
+        const individual = conta / num
+        // exibe a resposta (com 2 casas decimais no valor)
+        alert(`Valor por Cliente R$: ${individual.toFixed(2)}`)
+</script>        
+
+
+
+
+
