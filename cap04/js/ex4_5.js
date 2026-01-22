@@ -14,5 +14,3 @@ frm.addEventListener("submit", (e) => {
         exit.innerText = `Não há raiz exata para ${number}`
     }
 })
-
-raiz % 1 
