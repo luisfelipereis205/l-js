@@ -5,13 +5,35 @@ const prompt = require("prompt-sync") ()
 
 console.log("Programa paquímetro")
 
-const moeda = Number(prompt("Valor: R$ "))
+const valor = Number(prompt("Valor: R$ "))
 
 
-if (moeda < 1 ) {
+if (valor < 1 ) {
     console.log("Valor insuficiente")
     return
 }
+
+let tempo 
+let sobra
+
+if (valor >= 3 ) {
+    tempo = "120 min"
+    sobra = valor - 3
+} else if(valor >= 1.75) {
+    tempo = "60 min"
+    sobra = valor - 1.75
+} else {
+    tempo = "30 min"
+    sobra = valor - 1
+}
+
+console.log(`Tempo: ${tempo}`)
+console.log(`Troco: ${sobra.toFixed(2)}`)
+
+
+
+/*
+1-Tentativa 
 
 const temp1 = 1
 const temp2 = 1.75
@@ -40,4 +62,4 @@ if (moeda === temp1) {
 }
 
 console.log(`Tempo: ${tempo}`)
-
+*/
