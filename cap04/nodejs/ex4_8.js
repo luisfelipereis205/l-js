@@ -17,3 +17,4 @@ const valorParcelas = total / parcelas
 
 console.log(`Valor da compra: R$ ${total.toFixed(2)}`)
 console.log(`Pode pagar em ${parcelas}x de R$ ${valorParcelas}`)
+|
