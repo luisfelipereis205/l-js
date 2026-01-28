@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa Contas do Mês</title>
+</head>
+<body>
+    <h1>Programa Registrador de Contas </h1>
+
+    <form>
+
+        <p>
+            Descrição da conta (Aluguel, Água, Energia...): 
+            <input type="text" id="inDescricao" required>
+        </p>
+
+        <p>
+            Valor da conta R$: 
+            <input type="number" id="inValor" step="0.01" required>
+        </p>
+
+        <input type="submit" value="Registrar sua conta">
+    </form>
+
+    <pre id="outResp1"></pre>
+    <pre id="outResp2"></pre>
+
+    <script src="js/ex5_5.js"></script>
+</body>
+</html>
